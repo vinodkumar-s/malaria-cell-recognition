@@ -13,9 +13,8 @@ Malaria dataset of 27,558 cell images with an equal number of parasitized and un
 
 ![deepimg1](https://github.com/Gchethankumar/malaria-cell-recognition/assets/118348224/32faf856-10aa-4e0e-9a0c-59f3ee271ef8)
 
-
-<br>
-## DESIGN STEPS:
+ 
+### DESIGN STEPS:
 
 ### STEP 1:
 Import tensorflow and preprocessing libraries.
@@ -185,7 +184,7 @@ classifier.save('cell_model.h5')
 
 
 losses = pd.DataFrame(classifier.history.history)
-
+print("VINOD KUMAR -212222240116)
 losses[['loss','val_loss']].plot()
 
 
@@ -199,9 +198,10 @@ test_image_gen.classes
 
 predictions = pred_probabilities > 0.5
 
-
+print("VINOD KUMAR -212222240116")
 print(classification_report(test_image_gen.classes,predictions))
 
+print("VINOD KUAMR -212222240116)
 confusion_matrix(test_image_gen.classes,predictions)
 
 ```
@@ -224,7 +224,6 @@ confusion_matrix(test_image_gen.classes,predictions)
 
 ### New Sample Data Prediction
 ![Screenshot 2024-04-28 151910](https://github.com/vinodkumar-s/malaria-cell-recognition/assets/113497226/acd4101a-8f62-4001-a6f1-d36e67985ccf)
-
 
 
 ## RESULT
